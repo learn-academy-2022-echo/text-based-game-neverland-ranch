@@ -40,7 +40,7 @@ def main_game number
                             puts "You are dead, you would have been better off with Michael"
                             puts "GAME OVER"
                         else
-                            p "yay! you made it out!"
+                            puts "yay! you made it out!"
                             puts "lets continue away from michael"
                             puts "oooooo what that?"
                             puts "its a cave! were going in"
@@ -71,8 +71,18 @@ def main_game number
                                                     puts "nice you get to proceed"
                                                     puts "there is the mountain of salvation!"
                                                     puts "you climb to the top"
-                                                    
-                                                    # make riddle choice
+                                                    puts "there a genie, his name bob"
+                                                    puts "you must answer his riddle to go back home"
+                                                    puts "what goes up, but never comes down?"
+                                                    puts "type in lower case if 2 words use a space"
+                                                    right_answer = gets.chomp
+                                                        if right_answer == "your age"
+                                                            puts "you win, good job, michael has lost you and gone away"
+                                                        else
+                                                            puts "wrong!"
+                                                            puts "i will now return you michael's basement in your cage"
+                                                            puts "insert high pitched he he"
+                                                        end
                                                 else
                                                     puts "Tinkerbell fed you to the dragon. sorry bud"
                                                     puts "You are dead, you would have been better off with Michael"
@@ -80,7 +90,6 @@ def main_game number
                                                 end
                                                 
                                         else
-                                            puts "you and fairy are best friends now!"
                                             puts "lalalala"
                                             puts " oooo theres a dragon"
                                             puts "if only you could feed the fairy to the dragon"
@@ -101,12 +110,98 @@ def main_game number
                                 end    
                         end
                 else
-                 p "the kids are pissed. you must now choose to fight the kids (1) or not fight the kids (2)"
-                fight_flight = gets.chomp
+                    puts "the kids are pissed. you must now choose to either:"
+                    puts "fight the kids (1)"
+                    puts "do not fight the kids (2)"
+                    fight_flight = gets.chomp
                     if fight_flight == "1"
-                        p "asdf"
+                        puts "thank goodness you brought your sword"
+                        puts "you killed them all"
+                        puts "la la la la"
+                        puts "you just slipped into quick sand! bummer :("
+                        puts "do you grab the thing that looks like a rope? (1)"
+                        puts "or grab the thing that looks like a stick (2)"
+                        rope_choice = gets.chomp
+                            if rope_choice == "1"
+                                puts "not a rope, its a snake"
+                                puts "hiss hiss hiss bite "
+                                puts "You are dead, you would have been better off with Michael"
+                                puts "GAME OVER"
+                            else
+                                puts "yay! you made it out!"
+                                puts "lets continue away from michael"
+                                puts "oooooo what that?"
+                                puts "its a cave! were going in"
+                                puts "oooo its dark"
+                                puts "use cellphone light to see (1)"
+                                puts "use torch to see (2)"
+                                gets_caveQ = gets.chomp
+                                    if gets_caveQ == "1"
+                                        puts "your alarm went off"
+                                        puts "who sets and alarm for an inhaler?"
+                                        puts "You are dead, you would have been better off with Michael"
+                                        puts "GAME OVER"
+                                    else
+                                        puts "The torch was a good choice"
+                                        puts "glad you made it through that cave"
+                                        puts "ooh there is a cute fairy!"
+                                        puts "ask fairy to join you on your journey (1)"
+                                        puts "say bye to fairy and continue (2)"
+                                        fairy_q = gets.chomp
+                                            if fairy_q =="1"
+                                                puts "you and fairy are best friends now!"
+                                                puts "lalalala"
+                                                puts " oooo theres a dragon"
+                                                puts "feed fairy to dragon (1)"
+                                                puts "respect your friendship (2)"
+                                                dragon_food = gets.chomp
+                                                    if dragon_food == "1"
+                                                        puts "nice you get to proceed"
+                                                        puts "there is the mountain of salvation!"
+                                                        puts "you climb to the top"
+                                                        puts "there a genie, his name bob"
+                                                        puts "you must answer his riddle to go back home"
+                                                        puts "what goes up, but never comes down?"
+                                                        puts "type in lower case if 2 words use a space"
+                                                        right_answer = gets.chomp
+                                                            if right_answer == "your age"
+                                                                puts "you win, good job, michael has lost you and gone away"
+                                                            else
+                                                                puts "wrong!"
+                                                                puts "i will now return you michael's basement in your cage"
+                                                                puts "insert high pitched he he"
+                                                            end    
+                                                        
+                                                    else
+                                                        puts "Tinkerbell fed you to the dragon. sorry bud"
+                                                        puts "You are dead, you would have been better off with Michael"
+                                                        puts "GAME OVER"
+                                                    end
+                                                    
+                                            else
+                                                puts "lalalala"
+                                                puts " oooo theres a dragon"
+                                                puts "if only you could feed the fairy to the dragon"
+                                                puts" try and fight the dragon (1)"
+                                                puts "run (2)"
+                                                doesnt_matter = gets.chomp
+                                                    if doesnt_matter == "1"
+                                                        puts "trying to fight is pointless"
+                                                        puts "You are dead, you would have been better off with Michael"
+                                                        puts "GAME OVER"
+                                                    else
+                                                        puts "running is pointless, dragons fly"
+                                                        puts "You are dead, you would have been better off with Michael"
+                                                        puts "GAME OVER"
+                                                    end
+                                            end
+    
+                                    end    
+                            end    
                     else
-                        p "xx"
+                        puts "they kicked the crap out of you."
+                        puts "You are dead, you would have been better off with Michael"
+                        puts "GAME OVER"
                     end
                 end
             
@@ -114,14 +209,16 @@ def main_game number
             
                             
         else
-        p "you chose to check under the bridge, uh oh there is a troll. fight the troll (1) or jump in the water (2)"
-        swim_troll = gets.chomp
-            if swim_troll == "1"
+            puts "you chose to check under the bridge, uh oh there is a troll"
+            puts " fight the troll (1)"
+            puts "jump in the water (2)"
+            swim_troll = gets.chomp
+                if swim_troll == "1"
                 puts "Fighting a troll just seems silly"
                 puts "Its a troll and you are a little boy"
                 puts "You are dead, you would have been better off with Michael"
                 puts "GAME OVER"
-            else
+                else
                 puts "This water is cold, but its not bad, better than fighting a troll, thats for sure"
                 puts "do you even know how to swim?"
                 puts "yes (1) no (2)"
@@ -132,7 +229,8 @@ def main_game number
                         puts "cross river (2)"
                         cross_river = gets.chomp
                             if cross_river == "1"
-                                puts "why would you go in the water? That is stupid" 
+                                puts "why would you go in the water? That is stupid"
+                                puts "you encounter a waterfall of with razor blades at the bottom" 
                                 puts "You are dead, you would have been better off with Michael"
                                 puts "GAME OVER" 
                             else
@@ -166,12 +264,24 @@ def main_game number
                                                         puts "nice you get to proceed"
                                                         puts "there is the mountain of salvation!"
                                                         puts "you climb to the top"
+                                                        puts "there a genie, his name bob"
+                                                        puts "you must answer his riddle to go back home"
+                                                        puts "what goes up, but never comes down?"
+                                                        puts "type in lower case if 2 words use a space"
+                                                        right_answer = gets.chomp
+                                                            if right_answer == "your age"
+                                                                puts "you win, good job, michael has lost you and gone away"
+                                                            else
+                                                                puts "wrong!"
+                                                                puts "i will now return you michael's basement in your cage"
+                                                                puts "insert high pitched he he"
+                                                            end    
                                                         
-                                                        # make riddle choice
                                                     else
                                                         puts "Tinkerbell fed you to the dragon. sorry bud"
                                                         puts "You are dead, you would have been better off with Michael"
                                                         puts "GAME OVER"
+                                                    end
                                             else
                                                 puts "you and fairy are best friends now!"
                                                 puts "lalalala"
@@ -202,7 +312,7 @@ def main_game number
                     end
                 
                     
-            end
+                end
             
 
         end
